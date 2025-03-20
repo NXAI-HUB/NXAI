@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <!-- Gradients and patterns -->
+    <linearGradient id="header-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F0B30" />
+      <stop offset="100%" stop-color="#1D0F45" />
+    </linearGradient>
+    <linearGradient id="frontend-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00C2FF" />
+      <stop offset="100%" stop-color="#0094C2" />
+    </linearGradient>
+    <linearGradient id="ai-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9B4BFF" />
+      <stop offset="100%" stop-color="#7A3BCC" />
+    </linearGradient>
+    <linearGradient id="blockchain-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4B9B" />
+      <stop offset="100%" stop-color="#CC3B7A" />
+    </linearGradient>
+    <linearGradient id="data-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4BFF9B" />
+      <stop offset="100%" stop-color="#3BCC7A" />
+    </linearGradient>
+    <linearGradient id="connector-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9B4BFF" />
+      <stop offset="100%" stop-color="#FF4B9B" />
+    </linearGradient>
+    <!-- Drop shadow -->
+    <filter id="drop-shadow" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="2" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0F0B30" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">NXAI Architecture</text>
+  
+  <!-- Frontend Layer -->
+  <g transform="translate(400, 140)">
+    <rect x="-300" y="-40" width="600" height="80" rx="10" ry="10" fill="url(#frontend-gradient)" filter="url(#drop-shadow)" />
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Frontend Layer</text>
+    <text x="-280" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Next.js</text>
+    <text x="-200" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">React</text>
+    <text x="-120" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">TypeScript</text>
+    <text x="-20" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Tailwind CSS</text>
+    <text x="120" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Framer Motion</text>
+    <text x="230" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Three.js</text>
+  </g>
+  
+  <!-- Middleware Layer -->
+  <g transform="translate(400, 250)">
+    <rect x="-300" y="-40" width="600" height="80" rx="10" ry="10" fill="#2A1968" filter="url(#drop-shadow)" />
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Middleware Layer</text>
+    <text x="-280" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">API Routes</text>
+    <text x="-180" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Authentication</text>
+    <text x="-50" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Caching</text>
+    <text x="50" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Data Validation</text>
+    <text x="200" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Error Handling</text>
+  </g>
+  
+  <!-- AI Engine -->
+  <g transform="translate(200, 360)">
+    <rect x="-150" y="-40" width="300" height="80" rx="10" ry="10" fill="url(#ai-gradient)" filter="url(#drop-shadow)" />
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">AI Engine</text>
+    <text x="-130" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">TensorFlow.js</text>
+    <text x="-30" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Chart.js</text>
+    <text x="70" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Predictions</text>
+  </g>
+  
+  <!-- Blockchain Module -->
+  <g transform="translate(600, 360)">
+    <rect x="-150" y="-40" width="300" height="80" rx="10" ry="10" fill="url(#blockchain-gradient)" filter="url(#drop-shadow)" />
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Blockchain Module</text>
+    <text x="-130" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Ethers.js</text>
+    <text x="-50" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Smart Contracts</text>
+    <text x="80" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Wallets</text>
+  </g>
+  
+  <!-- Data Storage -->
+  <g transform="translate(400, 470)">
+    <rect x="-150" y="-40" width="300" height="80" rx="10" ry="10" fill="url(#data-gradient)" filter="url(#drop-shadow)" />
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Data Storage</text>
+    <text x="-130" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">User Data</text>
+    <text x="-50" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Market Data</text>
+    <text x="50" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Predictions</text>
+    <text x="130" y="0" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="start">Analytics</text>
+  </g>
+  
+  <!-- Connector lines -->
+  <!-- Frontend to Middleware -->
+  <line x1="400" y1="180" x2="400" y2="210" stroke="url(#connector-gradient)" stroke-width="2" />
+  <!-- Middleware to AI -->
+  <line x1="400" y1="290" x2="250" y2="320" stroke="url(#connector-gradient)" stroke-width="2" />
+  <!-- Middleware to Blockchain -->
+  <line x1="400" y1="290" x2="550" y2="320" stroke="url(#connector-gradient)" stroke-width="2" />
+  <!-- AI to Data Storage -->
+  <line x1="250" y1="400" x2="350" y2="430" stroke="url(#connector-gradient)" stroke-width="2" />
+  <!-- Blockchain to Data Storage -->
+  <line x1="550" y1="400" x2="450" y2="430" stroke="url(#connector-gradient)" stroke-width="2" />
+  
+  <!-- Arrows -->
+  <polygon points="400,212 396,205 404,205" fill="url(#connector-gradient)" />
+  <polygon points="252,322 246,317 252,312" fill="url(#connector-gradient)" />
+  <polygon points="552,322 546,317 552,312" fill="url(#connector-gradient)" />
+  <polygon points="352,432 346,427 352,422" fill="url(#connector-gradient)" />
+  <polygon points="452,432 446,427 452,422" fill="url(#connector-gradient)" />
+</svg> 

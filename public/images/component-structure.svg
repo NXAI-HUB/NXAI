@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="header-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00C2FF" />
+      <stop offset="100%" stop-color="#007A9E" />
+    </linearGradient>
+    <linearGradient id="markets-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9B4BFF" />
+      <stop offset="100%" stop-color="#7A3BCC" />
+    </linearGradient>
+    <linearGradient id="insights-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4B9B" />
+      <stop offset="100%" stop-color="#CC3B7A" />
+    </linearGradient>
+    <linearGradient id="home-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4BFF9B" />
+      <stop offset="100%" stop-color="#3BCC7A" />
+    </linearGradient>
+    <linearGradient id="common-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB74B" />
+      <stop offset="100%" stop-color="#CC933B" />
+    </linearGradient>
+    
+    <!-- Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0F0B30" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">NXAI Component Structure</text>
+  
+  <!-- Components Tree -->
+  <!-- Root -->
+  <rect x="340" y="70" width="120" height="40" rx="5" ry="5" fill="#2A1968" filter="url(#shadow)" />
+  <text x="400" y="95" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Layout</text>
+  
+  <!-- Header/Footer -->
+  <rect x="120" y="140" width="120" height="40" rx="5" ry="5" fill="url(#header-grad)" filter="url(#shadow)" />
+  <text x="180" y="165" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Header</text>
+  
+  <rect x="560" y="140" width="120" height="40" rx="5" ry="5" fill="url(#header-grad)" filter="url(#shadow)" />
+  <text x="620" y="165" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Footer</text>
+  
+  <!-- Content Area -->
+  <rect x="320" y="140" width="160" height="40" rx="5" ry="5" fill="#2A1968" filter="url(#shadow)" />
+  <text x="400" y="165" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Content Pages</text>
+  
+  <!-- Connections -->
+  <line x1="400" y1="110" x2="400" y2="140" stroke="#6E56CF" stroke-width="2" />
+  <line x1="400" y1="110" x2="180" y2="140" stroke="#6E56CF" stroke-width="2" />
+  <line x1="400" y1="110" x2="620" y2="140" stroke="#6E56CF" stroke-width="2" />
+  
+  <!-- Page Components -->
+  <!-- Home -->
+  <rect x="100" y="220" width="120" height="40" rx="5" ry="5" fill="url(#home-grad)" filter="url(#shadow)" />
+  <text x="160" y="245" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Home Page</text>
+  
+  <!-- Markets -->
+  <rect x="340" y="220" width="120" height="40" rx="5" ry="5" fill="url(#markets-grad)" filter="url(#shadow)" />
+  <text x="400" y="245" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Markets Page</text>
+  
+  <!-- Insights -->
+  <rect x="580" y="220" width="120" height="40" rx="5" ry="5" fill="url(#insights-grad)" filter="url(#shadow)" />
+  <text x="640" y="245" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Insights Page</text>
+  
+  <!-- Connections -->
+  <line x1="400" y1="180" x2="160" y2="220" stroke="#6E56CF" stroke-width="2" />
+  <line x1="400" y1="180" x2="400" y2="220" stroke="#6E56CF" stroke-width="2" />
+  <line x1="400" y1="180" x2="640" y2="220" stroke="#6E56CF" stroke-width="2" />
+  
+  <!-- Market Components -->
+  <!-- Heading -->
+  <text x="400" y="290" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Markets Components</text>
+  
+  <rect x="160" y="320" width="120" height="40" rx="5" ry="5" fill="url(#markets-grad)" filter="url(#shadow)" />
+  <text x="220" y="345" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">MarketsList</text>
+  
+  <rect x="340" y="320" width="120" height="40" rx="5" ry="5" fill="url(#markets-grad)" filter="url(#shadow)" />
+  <text x="400" y="345" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">MarketCategories</text>
+  
+  <rect x="520" y="320" width="120" height="40" rx="5" ry="5" fill="url(#markets-grad)" filter="url(#shadow)" />
+  <text x="580" y="345" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">MarketCreation</text>
+  
+  <!-- Connection -->
+  <line x1="400" y1="260" x2="400" y2="290" stroke="#6E56CF" stroke-width="2" />
+  <line x1="400" y1="290" x2="220" y2="320" stroke="#6E56CF" stroke-width="2" />
+  <line x1="400" y1="290" x2="400" y2="320" stroke="#6E56CF" stroke-width="2" />
+  <line x1="400" y1="290" x2="580" y2="320" stroke="#6E56CF" stroke-width="2" />
+  
+  <!-- Market Details Components-->
+  <rect x="100" y="390" width="240" height="140" rx="5" ry="5" fill="url(#markets-grad)" opacity="0.3" filter="url(#shadow)" />
+  <text x="220" y="415" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">MarketsList Features</text>
+  
+  <text x="120" y="440" font-family="Arial, sans-serif" font-size="12" fill="white">• Featured Markets Display</text>
+  <text x="120" y="465" font-family="Arial, sans-serif" font-size="12" fill="white">• Market Filtering</text>
+  <text x="120" y="490" font-family="Arial, sans-serif" font-size="12" fill="white">• Search Functionality</text>
+  <text x="120" y="515" font-family="Arial, sans-serif" font-size="12" fill="white">• Market Cards with Details</text>
+  
+  <!-- Categories Components -->
+  <rect x="360" y="390" width="240" height="140" rx="5" ry="5" fill="url(#markets-grad)" opacity="0.3" filter="url(#shadow)" />
+  <text x="480" y="415" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Market Components Features</text>
+  
+  <text x="380" y="440" font-family="Arial, sans-serif" font-size="12" fill="white">• Category Navigation</text>
+  <text x="380" y="465" font-family="Arial, sans-serif" font-size="12" fill="white">• Filter Controls</text>
+  <text x="380" y="490" font-family="Arial, sans-serif" font-size="12" fill="white">• Market Creation Form</text>
+  <text x="380" y="515" font-family="Arial, sans-serif" font-size="12" fill="white">• AI Insights Integration</text>
+  
+  <!-- Common Components Shared -->
+  <rect x="260" y="560" width="280" height="30" rx="5" ry="5" fill="url(#common-grad)" filter="url(#shadow)" />
+  <text x="400" y="580" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Common UI Components</text>
+  
+  <!-- Connections -->
+  <line x1="220" y1="360" x2="220" y2="390" stroke="#6E56CF" stroke-width="2" />
+  <line x1="480" y1="360" x2="480" y2="390" stroke="#6E56CF" stroke-width="2" />
+  <line x1="400" y1="530" x2="400" y2="560" stroke="#6E56CF" stroke-width="2" />
+</svg> 
